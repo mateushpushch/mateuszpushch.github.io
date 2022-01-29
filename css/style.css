@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: red;
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    height: 150px;
+    width: 100%;
+    border: 2px solid red;
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    color: white;
+}
+
+main section {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(115, 176, 255);
+    text-align: center;
+    border: 2px solid red;
+}
+
+.asider {
+    width: 20%;
+    background-color: pink;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    border: 2px solid red;
+}
+
+.asideleft {
+    width: 20%;
+    background-color: rgb(22, 145, 22);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    border: 2px solid red;
+}
+
+footer {
+    background-color: rgb(132, 133, 219);
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    height: 70px;
+    width: 100%;
+    border: 2px solid red;
+    position: relative;
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+    .asideleft { 
+        width: 100%;
+        order: 1;
+    }
+    footer {
+        order: 5;
+    }
+    .asider {
+        width: 30%;
+    }
+    main {
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .asideleft { 
+        width: 100%;
+        order: 1;
+    }
+    footer {
+        order: 5;
+    }
+    .asider {
+        width: 100%;
+        order: 2;
+    }
+    main {
+        width: 100%;
+    }
+}
+
+
